@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="72" arch="Mac64" script="muParser" windows="2" expand="1">
+	<window type="1" name="Aufreinigungstabelle" date="2460437.7245999" x="12" y="1" w="1072" h="632" state="1" active="1">
+		<tab rows="30" cols="13" labels="7">
+			<col name="1" type="6" num="0" prec="13" plot="1" width="100" stat="0" lname="Fraktion" data="6;;;6 nach glycerol;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="131" stat="0" lname="m (delta(A)/delta(t)" unit="1/min" data="3;;;3.084;"/>
+			<col name="3" type="6" num="0" prec="13" plot="2" width="125" stat="0" lname="Extinktionskoeffizient" unit="1/cm*mM" data="26;;;26;"/>
+			<col name="4" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;2&quot;)/col(&quot;3&quot;)" stat="0" lname="delta(c)/delta(t)" unit="mmol/min*L" comment="= m/E" muparser="1" data="0.115384615384615;;;0.118615384615385;"/>
+			<col name="5" type="6" num="0" prec="13" plot="2" width="193" stat="0" lname="Volumen Konzentrationsänderung" unit="L" data="0.001;;;0.001;"/>
+			<col name="6" type="6" num="0" prec="13" plot="2" width="165" formula="col(&quot;4&quot;)" stat="0" lname="delta(n)/delta(t)" unit="IU" comment="= [delta(c)/delta(t)]*Vdelta(c)" muparser="1" data="0.115384615384615;;;0.118615384615385;"/>
+			<col name="7" type="6" num="0" prec="13" plot="2" width="151" stat="0" lname="Verdünnung" data="20;;;10;"/>
+			<col name="8" type="6" num="0" prec="13" plot="2" width="170" stat="0" lname="Volumen eingesetztes Enzym" unit="mL" data="0.05;;;0.06;"/>
+			<col name="9" type="6" num="0" prec="13" plot="2" width="237" formula="col(&quot;6&quot;)*(col(&quot;7&quot;)/col(&quot;8&quot;))" stat="0" lname="Enzymaktivität/mL" unit="IU/mL" comment="=(delta(n)/delta(t) * (Verdünnung/V Enzym)" muparser="1" data="46.1538461538462;;;19.7692307692308;"/>
+			<col name="10" type="6" num="0" prec="13" plot="2" width="100" stat="0" lname="Gesamtvolumen" unit="mL" data="1.7999;"/>
+			<col name="11" type="6" num="0" prec="13" plot="2" width="100" stat="0" lname="Gesamtprotein" unit="mg" data="21.959;"/>
+			<col name="12" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;9&quot;)*col(&quot;10&quot;)" stat="0" lname="Gesamtaktivität" unit="IU" comment="=EA pro mL * Gesamtvolumen" muparser="1" data="83.0723076923077;"/>
+			<col name="13" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;12&quot;)/col(&quot;11&quot;)" stat="0" lname="spez. Aktivität" unit="UI/mg" comment="=Gesamtaktivität/Gesamtprotein" muparser="1" data="3.78306424210154;"/>
+		</tab>
+	</window>
+	<window type="1" name="ph-Optimum" date="2460437.7768102" x="0" y="25" w="1072" h="632">
+		<tab rows="30" cols="14" labels="7">
+			<col name="1" type="6" num="0" prec="13" plot="1" width="100" stat="0" lname="ph-Wert" data="6;7;8;8.5;9;9.5;10;10.5;11;12;"/>
+			<col name="2" type="6" num="0" prec="13" plot="2" width="131" stat="0" lname="m (delta(A)/delta(t)" unit="1/min" data="0.1754;0.49562;0.82787;1.19521;1.90257;1.99539;2.37544;1.92668;0.49825;0.0024;"/>
+			<col name="3" type="6" num="0" prec="13" plot="2" width="125" stat="0" lname="Extinktionskoeffizient" unit="1/cm*mM" data="8.14;12.5;18.72;21.46;24.24;24.7;24.18;25.17;25.31;25.01;"/>
+			<col name="4" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;2&quot;)/col(&quot;3&quot;)" stat="0" lname="delta(c)/delta(t)" unit="mmol/min*L" comment="= m/E" muparser="1" data="0.0215479115479115;0.0396496;0.0442238247863248;0.0556947809878844;0.0784888613861386;0.080785020242915;0.0982398676592225;0.0765466825586015;0.0196858949032003;9.59616153538584e-5;"/>
+			<col name="5" type="6" num="0" prec="13" plot="2" width="193" stat="0" lname="Volumen Konzentrationsänderung" unit="L" data="0.001;0.001;0.001;0.001;0.001;0.001;0.001;0.001;0.001;0.001;"/>
+			<col name="6" type="6" num="0" prec="13" plot="2" width="165" formula="col(&quot;4&quot;)" stat="0" lname="delta(n)/delta(t)" unit="IU" comment="= [delta(c)/delta(t)]*Vdelta(c)" muparser="1" data="0.0215479115479115;0.0396496;0.0442238247863248;0.0556947809878844;0.0784888613861386;0.080785020242915;0.0982398676592225;0.0765466825586015;0.0196858949032003;9.59616153538584e-5;"/>
+			<col name="7" type="6" num="0" prec="13" plot="2" width="151" stat="0" lname="Verdünnung" data="10;10;10;10;10;10;10;10;10;10;"/>
+			<col name="8" type="6" num="0" prec="13" plot="2" width="170" stat="0" lname="Volumen eingesetztes Enzym" unit="mL" data="0.03;0.03;0.03;0.03;0.03;0.03;0.03;0.03;0.03;0.03;"/>
+			<col name="9" type="6" num="0" prec="13" plot="2" width="237" formula="col(&quot;6&quot;)*(col(&quot;7&quot;)/col(&quot;8&quot;))" stat="0" lname="Enzymaktivität/mL" unit="IU/mL" comment="=(delta(n)/delta(t) * (Verdünnung/V Enzym)" muparser="1" data="7.18263718263718;13.2165333333333;14.7412749287749;18.5649269959615;26.1629537953795;26.9283400809717;32.7466225530742;25.5155608528672;6.56196496773344;0.0319872051179528;"/>
+			<col name="10" type="6" num="0" prec="13" plot="2" width="100" stat="0" lname="Gesamtvolumen" unit="mL" data="4.54;4.54;4.54;4.54;4.54;4.54;4.54;4.54;4.54;4.54;"/>
+			<col name="14" type="6" num="0" prec="13" plot="2" width="100" stat="0" lname="Konzentration Stammlösung" unit="mg/mL" data="4.887;4.887;4.887;4.887;4.887;4.887;4.887;4.887;4.887;4.887;"/>
+			<col name="11" type="6" num="0" prec="13" plot="2" width="100" formula="col(&quot;14&quot;)*col(&quot;10&quot;)" stat="0" lname="Gesamtprotein" unit="mg" muparser="1" data="22.18698;22.18698;22.18698;22.18698;22.18698;22.18698;22.18698;22.18698;22.18698;22.18698;"/>
+			<col name="12" type="6" num="0" prec="13" plot="2" width="68" formula="col(&quot;9&quot;)*col(&quot;10&quot;)" stat="0" lname="Gesamtaktivität" unit="IU" comment="=EA pro mL * Gesamtvolumen" muparser="1" data="32.6091728091728;60.0030613333333;66.9253881766382;84.2847685616651;118.779810231023;122.254663967611;148.669666390957;115.840646272017;29.7913209535098;0.145221911235506;"/>
+			<col name="13" type="6" num="0" prec="13" plot="2" width="356" formula="col(&quot;9&quot;)/(col(&quot;14&quot;))" stat="0" lname="spez. Aktivität" unit="UI/mg" comment="=(Enzymaktivität/mL)/ Konz.Enzym" muparser="1" data="1.46974364285598;2.7044267103199;3.0164262182883;3.7988391643056;5.35358170562299;5.51019850234738;6.70076172561371;5.2211092393835;1.34273889251759;0.00654536630201613;"/>
+		</tab>
+	</window>
+</qti>
