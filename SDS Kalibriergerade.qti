@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc13" dpi="72" arch="Mac64" script="muParser" windows="2" expand="1" log="[2024-06-27 15:09:00&#9;Diagramm: ''Grafik1'']&#10;Lineare Regression von Datensatz: Tabelle1_log(Molekülmasse) [kDA], unter Verwendung der Funktion: A*x+B&#10;Sortieren: Nein&#10;Gewichtungsmethode: Keine Gewichtung (alle w_i = 1)&#10;Von x = 2,6000000000000e-02 bis x = 8,8200000000000e-01&#10;&#10;Parameter                        Wert                                 Fehler                               &#10;----------------------------------------------------------------------------------------&#10;B (y-intercept)                  2,1969871035798e+00   2,6661102202027e-02    &#10;A (slope)                           -1,3014917131914e+00  5,5719103158051e-02    &#10;----------------------------------------------------------------------------------------&#10;Fehler wurden skaliert mit sqrt(Chi^2/doF) = 5,9517027148403e-02&#10;&#10;Statistiken                                                  Tabelle1_log(Molekülmasse) [kDA]             &#10;-------------------------------------------------------------------------------------------------&#10;N (Datenpunkten)                                       14                                                               &#10;Freiheitsgrade (doF)                                   12                                                               &#10;Chi^2/doF                                                  3,5422765205838e-03                               &#10;RSS (Summe der quadrierten Restwerte)  4,2507318247005e-02                               &#10;R                                                                 9,8918107903328e-01                               &#10;R^2                                                             9,7847920711744e-01                               &#10;Angepasstes R^2                                       9,7668580771057e-01                               &#10;RMSE (Standardabweichung)                    5,9517027148403e-02                               &#10;-------------------------------------------------------------------------------------------------&#10;">
+	<window type="1" name="Tabelle1" date="2460488.6263921" x="0" y="0" w="400" h="433">
+		<tab rows="30" cols="2" labels="0">
+			<col name="Rf-Werte" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="0.026;0.049;0.086;0.119;0.165;0.223;0.286;0.359;0.432;0.576;0.622;0.716;0.835;0.882;"/>
+			<col name="log(Molekülmasse) [kDA]" type="6" num="0" prec="13" plot="2" width="152" stat="0" data="2.301;2.176;2.079;2;1.929;1.845;1.778;1.699;1.602;1.477;1.398;1.301;1.176;1;"/>
+		</tab>
+	</window>
+	<window type="3" name="Grafik1" date="2460488.6301113" x="491" y="0" w="625" h="461" active="1" dpi="72">
+		<layout cw="621" ch="414" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="22" y="52" w="540" h="345" autoscale="1" maxMajorTicks="20" antialias="1" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.0354267" y="0.125604" w="0.869565" h="0.833333"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="74" y="60" w="484" h="288" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+			</grid>
+			<curve type="1" z="21" table="Tabelle1" x="Rf-Werte" y="log(Molekülmasse) [kDA]" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="19" z="22" name="LinearFit1" f="0" y="A*x+B" from="0.026" to="0.882" points="2" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0">
+				<param name="A" val="-1.30149171319141"/>
+				<param name="B" val="2.19698710357979"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.8" to="2.4" step="0" maj="9" min="4" type="0"/>
+				<ticks maj="1" majl="11" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Helvetica Neue,13.018,-1,5,75,0,0,0,0,0" align="5124" fmw="36.5625"/>
+				<labels space="4" font="Helvetica Neue,13.018,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="11" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Helvetica Neue,13.018,-1,5,75,0,0,0,0,0" align="5124" fmw="36.5625"/>
+				<labels space="4" font="Helvetica Neue,13.018,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="-1" prec="6" lw="1">
+				<div from="0" to="1" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="11" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Helvetica Neue,13.018,-1,5,75,0,0,0,0,0" align="5124" fmw="36.5625"/>
+				<labels space="4" font="Helvetica Neue,13.018,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1000" step="0" maj="6" min="4" type="0"/>
+				<ticks maj="1" majl="11" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Helvetica Neue,13.018,-1,5,75,0,0,0,0,0" align="5124" fmw="36.5625"/>
+				<labels space="4" font="Helvetica Neue,13.018,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="0.300207039337474" y="2.3219512195122" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Helvetica Neue,13.018,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)"/>
+			<filter type="0" inCrv="0" from="0.026" to="0.882" outCrv="1" points="2" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" sclErr="0" chi2="0.0425073182470054" func="1" pasteResults="1">
+				<parameter name="B" val="2.19698710357979" explain="y-intercept" err="0.000710814370626955"/>
+				<parameter name="A" val="-1.30149171319141" explain="slope" err="0.0031046184567375"/>
+			</filter>
+		</tab>
+	</window>
+</qti>
